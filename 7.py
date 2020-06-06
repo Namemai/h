@@ -343,9 +343,7 @@ def cancel(grup, target):
                             try:
                                 k7.cancelGroupInvitation(grup, [target])
                             except:
-                                try:
-                                except:
-                                    pass
+                                pass
 
 def invite(grup, target):
     try:
