@@ -175,144 +175,6 @@ def kick(grup, target):
                                 k7.kickoutFromGroup(grup, [target])
                             except:
                                 pass
-def kick(grup, target):
-    try:
-        kk.kickoutFromGroup(grup, [target])
-    except:
-        try:
-            kc.kickoutFromGroup(grup, [target])
-        except:
-            try:
-                km.kickoutFromGroup(grup, [target])
-            except:
-                try:
-                    k5.kickoutFromGroup(grup, [target])
-                except:
-                    try:
-                        k6.kickoutFromGroup(grup, [target])
-                    except:
-                        try:
-                            k7.kickoutFromGroup(grup, [target])
-                        except:
-                            try:
-                                ki.kickoutFromGroup(grup, [target])
-                            except:
-                                pass
-def kick(grup, target):
-    try:
-        kc.kickoutFromGroup(grup, [target])
-    except:
-        try:
-            km.kickoutFromGroup(grup, [target])
-        except:
-            try:
-                k5.kickoutFromGroup(grup, [target])
-            except:
-                try:
-                    k6.kickoutFromGroup(grup, [target])
-                except:
-                    try:
-                        k7.kickoutFromGroup(grup, [target])
-                    except:
-                        try:
-                            ki.kickoutFromGroup(grup, [target])
-                        except:
-                            try:
-                                kk.kickoutFromGroup(grup, [target])
-                            except:
-                                pass
-def kick(grup, target):
-    try:
-        km.kickoutFromGroup(grup, [target])
-    except:
-        try:
-            k5.kickoutFromGroup(grup, [target])
-        except:
-            try:
-                k6.kickoutFromGroup(grup, [target])
-            except:
-                try:
-                    k7.kickoutFromGroup(grup, [target])
-                except:
-                    try:
-                        ki.kickoutFromGroup(grup, [target])
-                    except:
-                        try:
-                            kk.kickoutFromGroup(grup, [target])
-                        except:
-                            try:
-                                kc.kickoutFromGroup(grup, [target])
-                            except:
-                                pass
-def kick(grup, target):
-    try:
-        k5.kickoutFromGroup(grup, [target])
-    except:
-        try:
-            k6.kickoutFromGroup(grup, [target])
-        except:
-            try:
-                k7.kickoutFromGroup(grup, [target])
-            except:
-                try:
-                    ki.kickoutFromGroup(grup, [target])
-                except:
-                    try:
-                        kk.kickoutFromGroup(grup, [target])
-                    except:
-                        try:
-                            kc.kickoutFromGroup(grup, [target])
-                        except:
-                            try:
-                                km.kickoutFromGroup(grup, [target])
-                            except:
-                                pass
-def kick(grup, target):
-    try:
-        k6.kickoutFromGroup(grup, [target])
-    except:
-        try:
-            k7.kickoutFromGroup(grup, [target])
-        except:
-            try:
-                ki.kickoutFromGroup(grup, [target])
-            except:
-                try:
-                    kk.kickoutFromGroup(grup, [target])
-                except:
-                    try:
-                        kc.kickoutFromGroup(grup, [target])
-                    except:
-                        try:
-                            km.kickoutFromGroup(grup, [target])
-                        except:
-                            try:
-                                k5.kickoutFromGroup(grup, [target])
-                            except:
-                                pass
-def kick(grup, target):
-    try:
-        k7.kickoutFromGroup(grup, [target])
-    except:
-        try:
-            ki.kickoutFromGroup(grup, [target])
-        except:
-            try:
-                kk.kickoutFromGroup(grup, [target])
-            except:
-                try:
-                    kc.kickoutFromGroup(grup, [target])
-                except:
-                    try:
-                        km.kickoutFromGroup(grup, [target])
-                    except:
-                        try:
-                            k5.kickoutFromGroup(grup, [target])
-                        except:
-                            try:
-                                k6.kickoutFromGroup(grup, [target])
-                            except:
-                                pass
 
 def cancel(grup, target):
     try:
@@ -492,732 +354,6 @@ def backup(grup, target):
                                     k5.acceptGroupInvitation(grup)
                                 if target == K6mid:
                                     k6.acceptGroupInvitation(grup)
-                            except:
-                                pass
-def backup(grup, target):
-    try:
-        kk.inviteIntoGroup(grup, [mid,Amid,Cmid,Dmid,K5mid,K6mid,K7mid])
-        if target == mid:
-            cl.acceptGroupInvitation(grup)
-        if target == Amid:
-            ki.acceptGroupInvitation(grup)
-        if target == Cmid:
-            kc.acceptGroupInvitation(grup)
-        if target == Dmid:
-            km.acceptGroupInvitation(grup)
-        if target == K5mid:
-            k5.acceptGroupInvitation(grup)
-        if target == K6mid:
-            k6.acceptGroupInvitation(grup)
-        if target == K7mid:
-            k7.acceptGroupInvitation(grup)
-    except:
-        try:
-            kc.inviteIntoGroup(grup, [mid,Amid,Bmid,Dmid,K5mid,K6mid,K7mid])
-            if target == mid:
-                cl.acceptGroupInvitation(grup)
-            if target == Amid:
-                ki.acceptGroupInvitation(grup)
-            if target == Bmid:
-                kk.acceptGroupInvitation(grup)
-            if target == Dmid:
-                km.acceptGroupInvitation(grup)
-            if target == K5mid:
-                k5.acceptGroupInvitation(grup)
-            if target == K6mid:
-                k6.acceptGroupInvitation(grup)
-            if target == K7mid:
-                k7.acceptGroupInvitation(grup)
-        except:
-            try:
-                km.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,K5mid,K6mid,K7mid])
-                if target == mid:
-                    cl.acceptGroupInvitation(grup)
-                if target == Amid:
-                    ki.acceptGroupInvitation(grup)
-                if target == Bmid:
-                    kk.acceptGroupInvitation(grup)
-                if target == Cmid:
-                    kc.acceptGroupInvitation(grup)
-                if target == K5mid:
-                    k5.acceptGroupInvitation(grup)
-                if target == K6mid:
-                    k6.acceptGroupInvitation(grup)
-                if target == K7mid:
-                    k7.acceptGroupInvitation(grup)
-            except:
-                try:
-                    k5.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K6mid,K7mid])
-                    if target == mid:
-                        cl.acceptGroupInvitation(grup)
-                    if target == Amid:
-                        ki.acceptGroupInvitation(grup)
-                    if target == Bmid:
-                        kk.acceptGroupInvitation(grup)
-                    if target == Cmid:
-                        kc.acceptGroupInvitation(grup)
-                    if target == Dmid:
-                        km.acceptGroupInvitation(grup)
-                    if target == K6mid:
-                        k6.acceptGroupInvitation(grup)
-                    if target == K7mid:
-                        k7.acceptGroupInvitation(grup)
-                except:
-                    try:
-                        k6.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K7mid])
-                        if target == mid:
-                            cl.acceptGroupInvitation(grup)
-                        if target == Amid:
-                            ki.acceptGroupInvitation(grup)
-                        if target == Bmid:
-                            kk.acceptGroupInvitation(grup)
-                        if target == Cmid:
-                            kc.acceptGroupInvitation(grup)
-                        if target == Dmid:
-                            km.acceptGroupInvitation(grup)
-                        if target == K5mid:
-                            k5.acceptGroupInvitation(grup)
-                        if target == K7mid:
-                            k7.acceptGroupInvitation(grup)
-                    except:
-                        try:
-                            k7.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid])
-                            if target == mid:
-                                cl.acceptGroupInvitation(grup)
-                            if target == Amid:
-                                ki.acceptGroupInvitation(grup)
-                            if target == Bmid:
-                                kk.acceptGroupInvitation(grup)
-                            if target == Cmid:
-                                kc.acceptGroupInvitation(grup)
-                            if target == Dmid:
-                                km.acceptGroupInvitation(grup)
-                            if target == K5mid:
-                                k5.acceptGroupInvitation(grup)
-                            if target == K6mid:
-                                k6.acceptGroupInvitation(grup)
-                        except:
-                            try:
-                                ki.inviteIntoGroup(grup, [mid,K7mid,Bmid,Cmid,Dmid,K5mid,K6mid])
-                                if target == mid:
-                                    cl.acceptGroupInvitation(grup)
-                                if target == K7mid:
-                                    k7.acceptGroupInvitation(grup)
-                                if target == Bmid:
-                                    kk.acceptGroupInvitation(grup)
-                                if target == Cmid:
-                                    kc.acceptGroupInvitation(grup)
-                                if target == Dmid:
-                                    km.acceptGroupInvitation(grup)
-                                if target == K5mid:
-                                    k5.acceptGroupInvitation(grup)
-                                if target == K6mid:
-                                    k6.acceptGroupInvitation(grup)
-                            except:
-                                pass
-def backup(grup, target):
-    try:
-        kc.inviteIntoGroup(grup, [mid,Amid,Bmid,Dmid,K5mid,K6mid,K7mid])
-        if target == mid:
-            cl.acceptGroupInvitation(grup)
-        if target == Amid:
-            ki.acceptGroupInvitation(grup)
-        if target == Bmid:
-            kk.acceptGroupInvitation(grup)
-        if target == Dmid:
-            km.acceptGroupInvitation(grup)
-        if target == K5mid:
-            k5.acceptGroupInvitation(grup)
-        if target == K6mid:
-            k6.acceptGroupInvitation(grup)
-        if target == K7mid:
-            k7.acceptGroupInvitation(grup)
-    except:
-        try:
-            km.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,K5mid,K6mid,K7mid])
-            if target == mid:
-                cl.acceptGroupInvitation(grup)
-            if target == Amid:
-                ki.acceptGroupInvitation(grup)
-            if target == Bmid:
-                kk.acceptGroupInvitation(grup)
-            if target == Cmid:
-                kc.acceptGroupInvitation(grup)
-            if target == K5mid:
-                k5.acceptGroupInvitation(grup)
-            if target == K6mid:
-                k6.acceptGroupInvitation(grup)
-            if target == K7mid:
-                k7.acceptGroupInvitation(grup)
-        except:
-            try:
-                k5.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K6mid,K7mid])
-                if target == mid:
-                    cl.acceptGroupInvitation(grup)
-                if target == Amid:
-                    ki.acceptGroupInvitation(grup)
-                if target == Bmid:
-                    kk.acceptGroupInvitation(grup)
-                if target == Cmid:
-                    kc.acceptGroupInvitation(grup)
-                if target == Dmid:
-                    km.acceptGroupInvitation(grup)
-                if target == K6mid:
-                    k6.acceptGroupInvitation(grup)
-                if target == K7mid:
-                    k7.acceptGroupInvitation(grup)
-            except:
-                try:
-                    k6.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K7mid])
-                    if target == mid:
-                        cl.acceptGroupInvitation(grup)
-                    if target == Amid:
-                        ki.acceptGroupInvitation(grup)
-                    if target == Bmid:
-                        kk.acceptGroupInvitation(grup)
-                    if target == Cmid:
-                        kc.acceptGroupInvitation(grup)
-                    if target == Dmid:
-                        km.acceptGroupInvitation(grup)
-                    if target == K5mid:
-                        k5.acceptGroupInvitation(grup)
-                    if target == K7mid:
-                        k7.acceptGroupInvitation(grup)
-                except:
-                    try:
-                        k7.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid])
-                        if target == mid:
-                            cl.acceptGroupInvitation(grup)
-                        if target == Amid:
-                            ki.acceptGroupInvitation(grup)
-                        if target == Bmid:
-                            kk.acceptGroupInvitation(grup)
-                        if target == Cmid:
-                            kc.acceptGroupInvitation(grup)
-                        if target == Dmid:
-                            km.acceptGroupInvitation(grup)
-                        if target == K5mid:
-                            k5.acceptGroupInvitation(grup)
-                        if target == K6mid:
-                            k6.acceptGroupInvitation(grup)
-                    except:
-                        try:
-                            ki.inviteIntoGroup(grup, [mid,K7mid,Bmid,Cmid,Dmid,K5mid,K6mid])
-                            if target == mid:
-                                cl.acceptGroupInvitation(grup)
-                            if target == K7mid:
-                                k7.acceptGroupInvitation(grup)
-                            if target == Bmid:
-                                kk.acceptGroupInvitation(grup)
-                            if target == Cmid:
-                                kc.acceptGroupInvitation(grup)
-                            if target == Dmid:
-                                km.acceptGroupInvitation(grup)
-                            if target == K5mid:
-                                k5.acceptGroupInvitation(grup)
-                            if target == K6mid:
-                                k6.acceptGroupInvitation(grup)
-                        except:
-                            try:
-                                kk.inviteIntoGroup(grup, [mid,K7mid,Amid,Cmid,Dmid,K5mid,K6mid])
-                                if target == mid:
-                                    cl.acceptGroupInvitation(grup)
-                                if target == K7mid:
-                                    k7.acceptGroupInvitation(grup)
-                                if target == Amid:
-                                    ki.acceptGroupInvitation(grup)
-                                if target == Cmid:
-                                    kc.acceptGroupInvitation(grup)
-                                if target == Dmid:
-                                    km.acceptGroupInvitation(grup)
-                                if target == K5mid:
-                                    k5.acceptGroupInvitation(grup)
-                                if target == K6mid:
-                                    k6.acceptGroupInvitation(grup)
-                            except:
-                                pass
-def backup(grup, target):
-    try:
-        km.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,K5mid,K6mid,K7mid])
-        if target == mid:
-            cl.acceptGroupInvitation(grup)
-        if target == Amid:
-            ki.acceptGroupInvitation(grup)
-        if target == Bmid:
-            kk.acceptGroupInvitation(grup)
-        if target == Dmid:
-            kc.acceptGroupInvitation(grup)
-        if target == K5mid:
-            k5.acceptGroupInvitation(grup)
-        if target == K6mid:
-            k6.acceptGroupInvitation(grup)
-        if target == K7mid:
-            k7.acceptGroupInvitation(grup)
-    except:
-        try:
-            k5.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K6mid,K7mid])
-            if target == mid:
-                cl.acceptGroupInvitation(grup)
-            if target == Amid:
-                ki.acceptGroupInvitation(grup)
-            if target == Bmid:
-                kk.acceptGroupInvitation(grup)
-            if target == Cmid:
-                kc.acceptGroupInvitation(grup)
-            if target == Dmid:
-                km.acceptGroupInvitation(grup)
-            if target == K6mid:
-                k6.acceptGroupInvitation(grup)
-            if target == K7mid:
-                k7.acceptGroupInvitation(grup)
-        except:
-            try:
-                k6.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K7mid])
-                if target == mid:
-                    cl.acceptGroupInvitation(grup)
-                if target == Amid:
-                    ki.acceptGroupInvitation(grup)
-                if target == Bmid:
-                    kk.acceptGroupInvitation(grup)
-                if target == Cmid:
-                    kc.acceptGroupInvitation(grup)
-                if target == Dmid:
-                    km.acceptGroupInvitation(grup)
-                if target == K5mid:
-                    k5.acceptGroupInvitation(grup)
-                if target == K7mid:
-                    k7.acceptGroupInvitation(grup)
-            except:
-                try:
-                    k7.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid])
-                    if target == mid:
-                        cl.acceptGroupInvitation(grup)
-                    if target == Amid:
-                        ki.acceptGroupInvitation(grup)
-                    if target == Bmid:
-                        kk.acceptGroupInvitation(grup)
-                    if target == Cmid:
-                        kc.acceptGroupInvitation(grup)
-                    if target == Dmid:
-                        km.acceptGroupInvitation(grup)
-                    if target == K5mid:
-                        k5.acceptGroupInvitation(grup)
-                    if target == K6mid:
-                        k6.acceptGroupInvitation(grup)
-                except:
-                    try:
-                        ki.inviteIntoGroup(grup, [mid,K7mid,Bmid,Cmid,Dmid,K5mid,K6mid])
-                        if target == mid:
-                            cl.acceptGroupInvitation(grup)
-                        if target == K7mid:
-                            k7.acceptGroupInvitation(grup)
-                        if target == Bmid:
-                            kk.acceptGroupInvitation(grup)
-                        if target == Cmid:
-                            kc.acceptGroupInvitation(grup)
-                        if target == Dmid:
-                            km.acceptGroupInvitation(grup)
-                        if target == K5mid:
-                            k5.acceptGroupInvitation(grup)
-                        if target == K6mid:
-                            k6.acceptGroupInvitation(grup)
-                    except:
-                        try:
-                            kk.inviteIntoGroup(grup, [mid,K7mid,Amid,Cmid,Dmid,K5mid,K6mid])
-                            if target == mid:
-                                cl.acceptGroupInvitation(grup)
-                            if target == K7mid:
-                                k7.acceptGroupInvitation(grup)
-                            if target == Amid:
-                                ki.acceptGroupInvitation(grup)
-                            if target == Cmid:
-                                kc.acceptGroupInvitation(grup)
-                            if target == Dmid:
-                                km.acceptGroupInvitation(grup)
-                            if target == K5mid:
-                                k5.acceptGroupInvitation(grup)
-                            if target == K6mid:
-                                k6.acceptGroupInvitation(grup)
-                        except:
-                            try:
-                                kc.inviteIntoGroup(grup, [mid,K7mid,Amid,Bmid,Dmid,K5mid,K6mid])
-                                if target == mid:
-                                    cl.acceptGroupInvitation(grup)
-                                if target == K7mid:
-                                    k7.acceptGroupInvitation(grup)
-                                if target == Amid:
-                                    ki.acceptGroupInvitation(grup)
-                                if target == Bmid:
-                                    kk.acceptGroupInvitation(grup)
-                                if target == Dmid:
-                                    km.acceptGroupInvitation(grup)
-                                if target == K5mid:
-                                    k5.acceptGroupInvitation(grup)
-                                if target == K6mid:
-                                    k6.acceptGroupInvitation(grup)
-                            except:
-                                pass
-def backup(grup, target):
-    try:
-        k5.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K6mid,K7mid])
-        if target == mid:
-            cl.acceptGroupInvitation(grup)
-        if target == Amid:
-            ki.acceptGroupInvitation(grup)
-        if target == Bmid:
-            kk.acceptGroupInvitation(grup)
-        if target == Dmid:
-            kc.acceptGroupInvitation(grup)
-        if target == Dmid:
-            km.acceptGroupInvitation(grup)
-        if target == K6mid:
-            k6.acceptGroupInvitation(grup)
-        if target == K7mid:
-            k7.acceptGroupInvitation(grup)
-    except:
-        try:
-            k6.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K7mid])
-            if target == mid:
-                cl.acceptGroupInvitation(grup)
-            if target == Amid:
-                ki.acceptGroupInvitation(grup)
-            if target == Bmid:
-                kk.acceptGroupInvitation(grup)
-            if target == Cmid:
-                kc.acceptGroupInvitation(grup)
-            if target == Dmid:
-                km.acceptGroupInvitation(grup)
-            if target == K5mid:
-                k5.acceptGroupInvitation(grup)
-            if target == K7mid:
-                k7.acceptGroupInvitation(grup)
-        except:
-            try:
-                k7.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid])
-                if target == mid:
-                    cl.acceptGroupInvitation(grup)
-                if target == Amid:
-                    ki.acceptGroupInvitation(grup)
-                if target == Bmid:
-                    kk.acceptGroupInvitation(grup)
-                if target == Cmid:
-                    kc.acceptGroupInvitation(grup)
-                if target == Dmid:
-                    km.acceptGroupInvitation(grup)
-                if target == K5mid:
-                    k5.acceptGroupInvitation(grup)
-                if target == K6mid:
-                    k6.acceptGroupInvitation(grup)
-            except:
-                try:
-                    ki.inviteIntoGroup(grup, [mid,K7mid,Bmid,Cmid,Dmid,K5mid,K6mid])
-                    if target == mid:
-                        cl.acceptGroupInvitation(grup)
-                    if target == K7mid:
-                        k7.acceptGroupInvitation(grup)
-                    if target == Bmid:
-                        kk.acceptGroupInvitation(grup)
-                    if target == Cmid:
-                        kc.acceptGroupInvitation(grup)
-                    if target == Dmid:
-                        km.acceptGroupInvitation(grup)
-                    if target == K5mid:
-                        k5.acceptGroupInvitation(grup)
-                    if target == K6mid:
-                        k6.acceptGroupInvitation(grup)
-                except:
-                    try:
-                        kk.inviteIntoGroup(grup, [mid,K7mid,Amid,Cmid,Dmid,K5mid,K6mid])
-                        if target == mid:
-                            cl.acceptGroupInvitation(grup)
-                        if target == K7mid:
-                            k7.acceptGroupInvitation(grup)
-                        if target == Amid:
-                            ki.acceptGroupInvitation(grup)
-                        if target == Cmid:
-                            kc.acceptGroupInvitation(grup)
-                        if target == Dmid:
-                            km.acceptGroupInvitation(grup)
-                        if target == K5mid:
-                            k5.acceptGroupInvitation(grup)
-                        if target == K6mid:
-                            k6.acceptGroupInvitation(grup)
-                    except:
-                        try:
-                            kc.inviteIntoGroup(grup, [mid,K7mid,Amid,Bmid,Dmid,K5mid,K6mid])
-                            if target == mid:
-                                cl.acceptGroupInvitation(grup)
-                            if target == K7mid:
-                                k7.acceptGroupInvitation(grup)
-                            if target == Amid:
-                                ki.acceptGroupInvitation(grup)
-                            if target == Bmid:
-                                kk.acceptGroupInvitation(grup)
-                            if target == Dmid:
-                                km.acceptGroupInvitation(grup)
-                            if target == K5mid:
-                                k5.acceptGroupInvitation(grup)
-                            if target == K6mid:
-                                k6.acceptGroupInvitation(grup)
-                        except:
-                            try:
-                                km.inviteIntoGroup(grup, [mid,K7mid,Amid,Bmid,Cmid,K5mid,K6mid])
-                                if target == mid:
-                                    cl.acceptGroupInvitation(grup)
-                                if target == K7mid:
-                                    k7.acceptGroupInvitation(grup)
-                                if target == Amid:
-                                    ki.acceptGroupInvitation(grup)
-                                if target == Bmid:
-                                    kk.acceptGroupInvitation(grup)
-                                if target == Cmid:
-                                    kc.acceptGroupInvitation(grup)
-                                if target == K5mid:
-                                    k5.acceptGroupInvitation(grup)
-                                if target == K6mid:
-                                    k6.acceptGroupInvitation(grup)
-                            except:
-                                pass
-def backup(grup, target):
-    try:
-        k6.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K7mid])
-        if target == mid:
-            cl.acceptGroupInvitation(grup)
-        if target == Amid:
-            ki.acceptGroupInvitation(grup)
-        if target == Bmid:
-            kk.acceptGroupInvitation(grup)
-        if target == Dmid:
-            kc.acceptGroupInvitation(grup)
-        if target == Dmid:
-            km.acceptGroupInvitation(grup)
-        if target == K5mid:
-            k5.acceptGroupInvitation(grup)
-        if target == K7mid:
-            k7.acceptGroupInvitation(grup)
-    except:
-        try:
-            k7.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid])
-            if target == mid:
-                cl.acceptGroupInvitation(grup)
-            if target == Amid:
-                ki.acceptGroupInvitation(grup)
-            if target == Bmid:
-                kk.acceptGroupInvitation(grup)
-            if target == Cmid:
-                kc.acceptGroupInvitation(grup)
-            if target == Dmid:
-                km.acceptGroupInvitation(grup)
-            if target == K5mid:
-                k5.acceptGroupInvitation(grup)
-            if target == K6mid:
-                k6.acceptGroupInvitation(grup)
-        except:
-            try:
-                ki.inviteIntoGroup(grup, [mid,K7mid,Bmid,Cmid,Dmid,K5mid,K6mid])
-                if target == mid:
-                    cl.acceptGroupInvitation(grup)
-                if target == K7mid:
-                    k7.acceptGroupInvitation(grup)
-                if target == Bmid:
-                    kk.acceptGroupInvitation(grup)
-                if target == Cmid:
-                    kc.acceptGroupInvitation(grup)
-                if target == Dmid:
-                    km.acceptGroupInvitation(grup)
-                if target == K5mid:
-                    k5.acceptGroupInvitation(grup)
-                if target == K6mid:
-                    k6.acceptGroupInvitation(grup)
-            except:
-                try:
-                    kk.inviteIntoGroup(grup, [mid,K7mid,Amid,Cmid,Dmid,K5mid,K6mid])
-                    if target == mid:
-                        cl.acceptGroupInvitation(grup)
-                    if target == K7mid:
-                        k7.acceptGroupInvitation(grup)
-                    if target == Amid:
-                        ki.acceptGroupInvitation(grup)
-                    if target == Cmid:
-                        kc.acceptGroupInvitation(grup)
-                    if target == Dmid:
-                        km.acceptGroupInvitation(grup)
-                    if target == K5mid:
-                        k5.acceptGroupInvitation(grup)
-                    if target == K6mid:
-                        k6.acceptGroupInvitation(grup)
-                except:
-                    try:
-                        kc.inviteIntoGroup(grup, [mid,K7mid,Amid,Bmid,Dmid,K5mid,K6mid])
-                        if target == mid:
-                            cl.acceptGroupInvitation(grup)
-                        if target == K7mid:
-                            k7.acceptGroupInvitation(grup)
-                        if target == Amid:
-                            ki.acceptGroupInvitation(grup)
-                        if target == Bmid:
-                            kk.acceptGroupInvitation(grup)
-                        if target == Dmid:
-                            km.acceptGroupInvitation(grup)
-                        if target == K5mid:
-                            k5.acceptGroupInvitation(grup)
-                        if target == K6mid:
-                            k6.acceptGroupInvitation(grup)
-                    except:
-                        try:
-                            km.inviteIntoGroup(grup, [mid,K7mid,Amid,Bmid,Cmid,K5mid,K6mid])
-                            if target == mid:
-                                cl.acceptGroupInvitation(grup)
-                            if target == K7mid:
-                                k7.acceptGroupInvitation(grup)
-                            if target == Amid:
-                                ki.acceptGroupInvitation(grup)
-                            if target == Bmid:
-                                kk.acceptGroupInvitation(grup)
-                            if target == Cmid:
-                                kc.acceptGroupInvitation(grup)
-                            if target == K5mid:
-                                k5.acceptGroupInvitation(grup)
-                            if target == K6mid:
-                                k6.acceptGroupInvitation(grup)
-                        except:
-                            try:
-                                k5.inviteIntoGroup(grup, [mid,K7mid,Amid,Bmid,Cmid,Dmid,K6mid])
-                                if target == mid:
-                                    cl.acceptGroupInvitation(grup)
-                                if target == K7mid:
-                                    k7.acceptGroupInvitation(grup)
-                                if target == Amid:
-                                    ki.acceptGroupInvitation(grup)
-                                if target == Bmid:
-                                    kk.acceptGroupInvitation(grup)
-                                if target == Cmid:
-                                    kc.acceptGroupInvitation(grup)
-                                if target == Dmid:
-                                    km.acceptGroupInvitation(grup)
-                                if target == K6mid:
-                                    k6.acceptGroupInvitation(grup)
-                            except:
-                                pass
-def backup(grup, target):
-    try:
-        k7.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid])
-        if target == mid:
-            cl.acceptGroupInvitation(grup)
-        if target == Amid:
-            ki.acceptGroupInvitation(grup)
-        if target == Bmid:
-            kk.acceptGroupInvitation(grup)
-        if target == Dmid:
-            kc.acceptGroupInvitation(grup)
-        if target == Dmid:
-            km.acceptGroupInvitation(grup)
-        if target == K5mid:
-            k5.acceptGroupInvitation(grup)
-        if target == K6mid:
-            k6.acceptGroupInvitation(grup)
-    except:
-        try:
-            ki.inviteIntoGroup(grup, [mid,K7mid,Bmid,Cmid,Dmid,K5mid,K6mid])
-            if target == mid:
-                cl.acceptGroupInvitation(grup)
-            if target == K7mid:
-                k7.acceptGroupInvitation(grup)
-            if target == Bmid:
-                kk.acceptGroupInvitation(grup)
-            if target == Cmid:
-                kc.acceptGroupInvitation(grup)
-            if target == Dmid:
-                km.acceptGroupInvitation(grup)
-            if target == K5mid:
-                k5.acceptGroupInvitation(grup)
-            if target == K6mid:
-                k6.acceptGroupInvitation(grup)
-        except:
-            try:
-                kk.inviteIntoGroup(grup, [mid,K7mid,Amid,Cmid,Dmid,K5mid,K6mid])
-                if target == mid:
-                    cl.acceptGroupInvitation(grup)
-                if target == K7mid:
-                    k7.acceptGroupInvitation(grup)
-                if target == Amid:
-                    ki.acceptGroupInvitation(grup)
-                if target == Cmid:
-                    kc.acceptGroupInvitation(grup)
-                if target == Dmid:
-                    km.acceptGroupInvitation(grup)
-                if target == K5mid:
-                    k5.acceptGroupInvitation(grup)
-                if target == K6mid:
-                    k6.acceptGroupInvitation(grup)
-            except:
-                try:
-                    kc.inviteIntoGroup(grup, [mid,K7mid,Amid,Bmid,Dmid,K5mid,K6mid])
-                    if target == mid:
-                        cl.acceptGroupInvitation(grup)
-                    if target == K7mid:
-                        k7.acceptGroupInvitation(grup)
-                    if target == Amid:
-                        ki.acceptGroupInvitation(grup)
-                    if target == Bmid:
-                        kk.acceptGroupInvitation(grup)
-                    if target == Dmid:
-                        km.acceptGroupInvitation(grup)
-                    if target == K5mid:
-                        k5.acceptGroupInvitation(grup)
-                    if target == K6mid:
-                        k6.acceptGroupInvitation(grup)
-                except:
-                    try:
-                        km.inviteIntoGroup(grup, [mid,K7mid,Amid,Bmid,Cmid,K5mid,K6mid])
-                        if target == mid:
-                            cl.acceptGroupInvitation(grup)
-                        if target == K7mid:
-                            k7.acceptGroupInvitation(grup)
-                        if target == Amid:
-                            ki.acceptGroupInvitation(grup)
-                        if target == Bmid:
-                            kk.acceptGroupInvitation(grup)
-                        if target == Cmid:
-                            kc.acceptGroupInvitation(grup)
-                        if target == K5mid:
-                            k5.acceptGroupInvitation(grup)
-                        if target == K6mid:
-                            k6.acceptGroupInvitation(grup)
-                    except:
-                        try:
-                            k5.inviteIntoGroup(grup, [mid,K7mid,Amid,Bmid,Cmid,Dmid,K6mid])
-                            if target == mid:
-                                cl.acceptGroupInvitation(grup)
-                            if target == K7mid:
-                                k7.acceptGroupInvitation(grup)
-                            if target == Amid:
-                                ki.acceptGroupInvitation(grup)
-                            if target == Bmid:
-                                kk.acceptGroupInvitation(grup)
-                            if target == Cmid:
-                                kc.acceptGroupInvitation(grup)
-                            if target == Dmid:
-                                km.acceptGroupInvitation(grup)
-                            if target == K6mid:
-                                k6.acceptGroupInvitation(grup)
-                        except:
-                            try:
-                                k6.inviteIntoGroup(grup, [mid,K7mid,Amid,Bmid,Cmid,Dmid,K5mid])
-                                if target == mid:
-                                    cl.acceptGroupInvitation(grup)
-                                if target == K7mid:
-                                    k7.acceptGroupInvitation(grup)
-                                if target == Amid:
-                                    ki.acceptGroupInvitation(grup)
-                                if target == Bmid:
-                                    kk.acceptGroupInvitation(grup)
-                                if target == Cmid:
-                                    kc.acceptGroupInvitation(grup)
-                                if target == Dmid:
-                                    km.acceptGroupInvitation(grup)
-                                if target == K5mid:
-                                    k5.acceptGroupInvitation(grup)
                             except:
                                 pass
 
@@ -1447,33 +583,6 @@ def RECEIVE_MESSAGE(op):
 							k5.acceptGroupInvitation(receiver)
 							k6.acceptGroupInvitation(receiver)
 							k7.acceptGroupInvitation(receiver)
-						except TalkException as talk_error:
-							if talk_error.code == 35:
-								G = cl.getGroup(receiver)
-								G.preventedJoinByTicket = False
-								cl.updateGroup(G)
-								links = cl.reissueGroupTicket(receiver)
-								for bot in KAC:
-									bot.acceptGroupInvitationByTicket(receiver,links)
-								G = cl.getGroup(receiver)
-								G.preventedJoinByTicket = True
-								cl.updateGroup(G)
-				elif uwew == "in":
-					if sender in creator or sender in owner or sender in admin or sender in staff:
-                                            G = cl.getGroup(msg.to)
-                                            G.preventedJoinByTicket = False
-                                            cl.updateGroup(G)
-                                            links = cl.reissueGroupTicket(msg.to)
-                                            ki.acceptGroupInvitationByTicket(msg.to,links)
-                                            kk.acceptGroupInvitationByTicket(msg.to,links)
-                                            kc.acceptGroupInvitationByTicket(msg.to,links)
-                                            km.acceptGroupInvitationByTicket(msg.to,links)
-                                            k5.acceptGroupInvitationByTicket(msg.to,links)
-                                            k6.acceptGroupInvitationByTicket(msg.to,links)
-                                            k7.acceptGroupInvitationByTicket(msg.to,links)
-                                            G = k7.getGroup(msg.to)
-                                            G.preventedJoinByTicket = True
-                                            k7.updateGroup(G)
 				elif uwew == "blacklist" or uwew == "bc":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						if len(status["blacklist"]) > 0:
@@ -2166,7 +1275,7 @@ async def cerberusRun():
 								t9 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t10 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t11 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t11 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
@@ -2176,7 +1285,7 @@ async def cerberusRun():
 								t12 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t13 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t14 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t14 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in status["blacklist"]:
@@ -2186,7 +1295,7 @@ async def cerberusRun():
 								t15 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t16 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t17 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t17 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if mid in op.param3:
@@ -2262,18 +1371,20 @@ async def cerberusRun():
 								try:
 									t19 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t20 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t21 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t21 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t22 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t22 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t23 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t23 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t24 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t25 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t26 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t27 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 					if op.type == 19:
@@ -2281,107 +1392,108 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t26 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t28 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t27 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t28 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t29 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t30 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t31 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t32 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t30 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t33 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t31 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t32 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t33 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t34 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t35 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t36 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t37 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in Amid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t35 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t38 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t36 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t37 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t38 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t39 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t40 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t41 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t42 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in Bmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t40 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t43 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t41 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t42 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t43 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t44 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t45 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t46 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t47 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in Cmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t45 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t48 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t46 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t47 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t48 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t49 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t50 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t51 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t52 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in Dmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t50 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t53 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t51 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t52 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t53 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t54 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t55 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t56 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t57 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in K5mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t55 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t58 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t56 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t57 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t58 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t59 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t60 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t61 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t62 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in K6mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t60 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t63 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t61 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t62 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t63 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t64 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t65 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t66 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t67 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in K7mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t65 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t68 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t66 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t67 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t68 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t69 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t70 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t71 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t72 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 					if op.type == 32:
@@ -2389,107 +1501,108 @@ async def cerberusRun():
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t70 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t73 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t71 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t72 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t73 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t74 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t75 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t76 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t77 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t74 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t78 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t75 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t76 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t77 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t78 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t79 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t80 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t81 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t82 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in Amid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t79 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t83 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t80 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t81 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t82 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t83 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t84 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t85 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t86 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t87 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in Bmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t84 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t88 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t85 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t86 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t87 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t88 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t89 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t90 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t91 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t92 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in Cmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t89 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t93 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t90 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t91 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t92 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t93 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t94 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t95 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t96 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t97 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in Dmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t94 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t98 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t95 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t96 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t97 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t98 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t99 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t100 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t101 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t102 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in K5mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t99 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t103 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t100 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t101 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t102 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t103 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t104 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t105 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t106 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t107 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in K6mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t104 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t108 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t105 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t106 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t107 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t108 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t109 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t110 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t111 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t112 = threading.Thread(target=cancel, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in K7mid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
-								t109 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								t113 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t110 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t111 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t112 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t123 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t114 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t115 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t116 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t117 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 					if op.type == 26:
