@@ -178,25 +178,25 @@ def kick(grup, target):
 
 def cancel(grup, target):
     try:
-        ki.cancelGroupInvitation(grup, [target])
+        ki.cancelGroupInvitation(grup, [op.param2])
     except:
         try:
-            kk.cancelGroupInvitation(grup, [target])
+            kk.cancelGroupInvitation(grup, [op.param2])
         except:
             try:
-                kc.cancelGroupInvitation(grup, [target])
+                kc.cancelGroupInvitation(grup, [op.param2])
             except:
                 try:
-                    km.cancelGroupInvitation(grup, [target])
+                    km.cancelGroupInvitation(grup, [op.param2])
                 except:
                     try:
-                        k5.cancelGroupInvitation(grup, [target])
+                        k5.cancelGroupInvitation(grup, [op.param2])
                     except:
                         try:
-                            k6.cancelGroupInvitation(grup, [target])
+                            k6.cancelGroupInvitation(grup, [op.param2])
                         except:
                             try:
-                                k7.cancelGroupInvitation(grup, [target])
+                                k7.cancelGroupInvitation(grup, [op.param2])
                             except:
                                 pass
 
