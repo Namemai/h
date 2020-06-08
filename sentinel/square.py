@@ -25,7 +25,6 @@ class Square(object):
             self.squareObsToken = self.acquireEncryptedAccessToken(2).split('\x1e')[1]
         except:
             self.isSupportSquare = False
-            pass
             self.log('Your LINE account doesn\'t support Square')
 
     """Object"""
