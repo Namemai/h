@@ -276,7 +276,7 @@ def backup(grup, target):
                         cl.acceptGroupInvitation(grup)
                 except:
                     try:
-                        k5.inviteIntoGroup(grup, [target])
+                        k5.inviteIntoGroup(grup, [Amid,Bmid,Cmid,Dmid,mid])
                         if target == Amid:
                             ki.acceptGroupInvitation(grup)
                             ki.kickoutFromGroup(grup, [target])
