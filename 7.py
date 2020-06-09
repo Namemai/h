@@ -242,16 +242,22 @@ def backup(grup, target):
             cl.acceptGroupInvitation(grup)
         if target == Bmid:
             kk.acceptGroupInvitation(grup)
+            kk.kickoutFromGroup(grup, [target])
         if target == Cmid:
             kc.acceptGroupInvitation(grup)
+            kc.kickoutFromGroup(grup, [target])
         if target == Dmid:
             km.acceptGroupInvitation(grup)
+            km.kickoutFromGroup(grup, [target])
         if target == K5mid:
             k5.acceptGroupInvitation(grup)
+            k5.kickoutFromGroup(grup, [target])
         if target == K6mid:
             k6.acceptGroupInvitation(grup)
+            k6.kickoutFromGroup(grup, [target])
         if target == K7mid:
             k7.acceptGroupInvitation(grup)
+            k7.kickoutFromGroup(grup, [target])
     except:
         try:
             kk.inviteIntoGroup(grup, [mid,Amid,Cmid,Dmid,K5mid,K6mid,K7mid])
@@ -259,16 +265,22 @@ def backup(grup, target):
                 cl.acceptGroupInvitation(grup)
             if target == Amid:
                 ki.acceptGroupInvitation(grup)
+		ki.kickoutFromGroup(grup, [target])
             if target == Cmid:
                 kc.acceptGroupInvitation(grup)
+		kc.kickoutFromGroup(grup, [target])
             if target == Dmid:
                 km.acceptGroupInvitation(grup)
+		km.kickoutFromGroup(grup, [target])
             if target == K5mid:
                 k5.acceptGroupInvitation(grup)
+		k5.kickoutFromGroup(grup, [target])
             if target == K6mid:
                 k6.acceptGroupInvitation(grup)
+		k6.kickoutFromGroup(grup, [target])
             if target == K7mid:
                 k7.acceptGroupInvitation(grup)
+		k7.kickoutFromGroup(grup, [target])
         except:
             try:
                 kc.inviteIntoGroup(grup, [mid,Amid,Bmid,Dmid,K5mid,K6mid,K7mid])
@@ -276,16 +288,22 @@ def backup(grup, target):
                     cl.acceptGroupInvitation(grup)
                 if target == Amid:
                     ki.acceptGroupInvitation(grup)
+                    ki.kickoutFromGroup(grup, [target])
                 if target == Bmid:
                     kk.acceptGroupInvitation(grup)
+                    kk.kickoutFromGroup(grup, [target])
                 if target == Dmid:
                     km.acceptGroupInvitation(grup)
+                    km.kickoutFromGroup(grup, [target])
                 if target == K5mid:
                     k5.acceptGroupInvitation(grup)
+                    k5.kickoutFromGroup(grup, [target])
                 if target == K6mid:
                     k6.acceptGroupInvitation(grup)
+                    k6.kickoutFromGroup(grup, [target])
                 if target == K7mid:
                     k7.acceptGroupInvitation(grup)
+                    k7.kickoutFromGroup(grup, [target])
             except:
                 try:
                     km.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,K5mid,K6mid,K7mid])
@@ -293,16 +311,22 @@ def backup(grup, target):
                         cl.acceptGroupInvitation(grup)
                     if target == Amid:
                         ki.acceptGroupInvitation(grup)
+                        ki.kickoutFromGroup(grup, [target])
                     if target == Bmid:
                         kk.acceptGroupInvitation(grup)
+                        kk.kickoutFromGroup(grup, [target])
                     if target == Cmid:
                         kc.acceptGroupInvitation(grup)
+                        kc.kickoutFromGroup(grup, [target])
                     if target == K5mid:
                         k5.acceptGroupInvitation(grup)
+                        k5.kickoutFromGroup(grup, [target])
                     if target == K6mid:
                         k6.acceptGroupInvitation(grup)
+                        k6.kickoutFromGroup(grup, [target])
                     if target == K7mid:
                         k7.acceptGroupInvitation(grup)
+                        k7.kickoutFromGroup(grup, [target])
                 except:
                     try:
                         k5.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K6mid,K7mid])
@@ -310,16 +334,22 @@ def backup(grup, target):
                             cl.acceptGroupInvitation(grup)
                         if target == Amid:
                             ki.acceptGroupInvitation(grup)
+                            ki.kickoutFromGroup(grup, [target])
                         if target == Bmid:
                             kk.acceptGroupInvitation(grup)
+                            kk.kickoutFromGroup(grup, [target])
                         if target == Cmid:
                             kc.acceptGroupInvitation(grup)
+                            kc.kickoutFromGroup(grup, [target])
                         if target == Dmid:
                             km.acceptGroupInvitation(grup)
+                            km.kickoutFromGroup(grup, [target])
                         if target == K6mid:
                             k6.acceptGroupInvitation(grup)
+                            k6.kickoutFromGroup(grup, [target])
                         if target == K7mid:
                             k7.acceptGroupInvitation(grup)
+                            k7.kickoutFromGroup(grup, [target])
                     except:
                         try:
                             k6.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K7mid])
@@ -327,16 +357,22 @@ def backup(grup, target):
                                 cl.acceptGroupInvitation(grup)
                             if target == Amid:
                                 ki.acceptGroupInvitation(grup)
+                                ki.kickoutFromGroup(grup, [target])
                             if target == Bmid:
                                 kk.acceptGroupInvitation(grup)
+                                kk.kickoutFromGroup(grup, [target])
                             if target == Cmid:
                                 kc.acceptGroupInvitation(grup)
+                                kc.kickoutFromGroup(grup, [target])
                             if target == Dmid:
                                 km.acceptGroupInvitation(grup)
+                                km.kickoutFromGroup(grup, [target])
                             if target == K5mid:
                                 k5.acceptGroupInvitation(grup)
+                                k5.kickoutFromGroup(grup, [target])
                             if target == K7mid:
                                 k7.acceptGroupInvitation(grup)
+                                k7.kickoutFromGroup(grup, [target])
                         except:
                             try:
                                 k7.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid,K5mid,K6mid])
@@ -344,16 +380,22 @@ def backup(grup, target):
                                     cl.acceptGroupInvitation(grup)
                                 if target == Amid:
                                     ki.acceptGroupInvitation(grup)
+                                    ki.kickoutFromGroup(grup, [target])
                                 if target == Bmid:
                                     kk.acceptGroupInvitation(grup)
+                                    kk.kickoutFromGroup(grup, [target])
                                 if target == Cmid:
                                     kc.acceptGroupInvitation(grup)
+                                    kc.kickoutFromGroup(grup, [target])
                                 if target == Dmid:
                                     km.acceptGroupInvitation(grup)
+                                    km.kickoutFromGroup(grup, [target])
                                 if target == K5mid:
                                     k5.acceptGroupInvitation(grup)
+                                    k5.kickoutFromGroup(grup, [target])
                                 if target == K6mid:
                                     k6.acceptGroupInvitation(grup)
+                                    k6.kickoutFromGroup(grup, [target])
                             except:
                                 pass
 
