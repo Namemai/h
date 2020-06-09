@@ -208,67 +208,87 @@ def invite(grup, target):
 
 def backup(grup, target):
     try:
-        ki.inviteIntoGroup(grup, [Bmid,Cmid,Dmid,K5mid,mid])
+        ki.inviteIntoGroup(grup, [target])
         if target == Bmid:
             kk.acceptGroupInvitation(grup)
+            kk.kickoutFromGroup(grup, [target])
         if target == Cmid:
             kc.acceptGroupInvitation(grup)
+            kc.kickoutFromGroup(grup, [target])
         if target == Dmid:
             km.acceptGroupInvitation(grup)
+            km.kickoutFromGroup(grup, [target])
         if target == K5mid:
             k5.acceptGroupInvitation(grup)
+            k5.kickoutFromGroup(grup, [target])
         if target == mid:
             cl.acceptGroupInvitation(grup)
     except:
         try:
-            kk.inviteIntoGroup(grup, [mid,Amid,Cmid,Dmid,K5mid])
+            kk.inviteIntoGroup(grup, [target])
             if target == Amid:
                 ki.acceptGroupInvitation(grup)
+                ki.kickoutFromGroup(grup, [target])
             if target == Cmid:
                 kc.acceptGroupInvitation(grup)
+                kc.kickoutFromGroup(grup, [target])
             if target == Dmid:
                 km.acceptGroupInvitation(grup)
+                km.kickoutFromGroup(grup, [target])
             if target == K5mid:
                 k5.acceptGroupInvitation(grup)
+                k5.kickoutFromGroup(grup, [target])
             if target == mid:
                 cl.acceptGroupInvitation(grup)
         except:
             try:
-                kc.inviteIntoGroup(grup, [mid,Amid,Bmid,Dmid,K5mid])
+                kc.inviteIntoGroup(grup, [target])
                 if target == Amid:
                     ki.acceptGroupInvitation(grup)
+                    ki.kickoutFromGroup(grup, [target])
                 if target == Bmid:
                     kk.acceptGroupInvitation(grup)
+                    kk.kickoutFromGroup(grup, [target])
                 if target == Dmid:
                     km.acceptGroupInvitation(grup)
+                    km.kickoutFromGroup(grup, [target])
                 if target == K5mid:
                     k5.acceptGroupInvitation(grup)
+                    k5.kickoutFromGroup(grup, [target])
                 if target == mid:
                     cl.acceptGroupInvitation(grup)
             except:
                 try:
-                    km.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,K5mid])
+                    km.inviteIntoGroup(grup, [target])
                     if target == Amid:
                         ki.acceptGroupInvitation(grup)
+                        ki.kickoutFromGroup(grup, [target])
                     if target == Bmid:
                         kk.acceptGroupInvitation(grup)
+                        kk.kickoutFromGroup(grup, [target])
                     if target == Cmid:
                         kc.acceptGroupInvitation(grup)
+                        kc.kickoutFromGroup(grup, [target])
                     if target == K5mid:
                         k5.acceptGroupInvitation(grup)
+                        k5.kickoutFromGroup(grup, [target])
                     if target == mid:
                         cl.acceptGroupInvitation(grup)
                 except:
                     try:
-                        k5.inviteIntoGroup(grup, [mid,Amid,Bmid,Cmid,Dmid])
+                        k5.inviteIntoGroup(grup, [target])
                         if target == Amid:
                             ki.acceptGroupInvitation(grup)
+                            ki.kickoutFromGroup(grup, [target])
                         if target == Bmid:
                             kk.acceptGroupInvitation(grup)
+                            kk.kickoutFromGroup(grup, [target])
                         if target == Cmid:
                             kc.acceptGroupInvitation(grup)
+                            kc.kickoutFromGroup(grup, [target])
                         if target == Dmid:
                             km.acceptGroupInvitation(grup)
+                            km.kickoutFromGroup(grup, [target])
                         if target == mid:
                             cl.acceptGroupInvitation(grup)
                     except:
@@ -276,14 +296,19 @@ def backup(grup, target):
                             cl.inviteIntoGroup(grup, [Amid,Bmid,Cmid,Dmid,K5mid])
                             if target == Amid:
                                 ki.acceptGroupInvitation(grup)
+                                ki.kickoutFromGroup(grup, [target])
                             if target == Bmid:
                                 kk.acceptGroupInvitation(grup)
+                                kk.kickoutFromGroup(grup, [target])
                             if target == Cmid:
                                 kc.acceptGroupInvitation(grup)
+                                kc.kickoutFromGroup(grup, [target])
                             if target == Dmid:
                                 km.acceptGroupInvitation(grup)
+                                km.kickoutFromGroup(grup, [target])
                             if target == K5mid:
                                 k5.acceptGroupInvitation(grup)
+                                k5.kickoutFromGroup(grup, [target])
                         except:
                             pass
 
@@ -1196,7 +1221,7 @@ async def cerberusRun():
 								t26 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t27 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t28 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t28 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t29 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
@@ -1274,7 +1299,7 @@ async def cerberusRun():
 								t54 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t55 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t56 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+									t56 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t57 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
