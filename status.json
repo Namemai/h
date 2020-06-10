@@ -12,6 +12,6 @@
     "staff": [
         "u46972f7c43e399c93cf49fad40ae7262"
     ],
-    "blacklist": [],
-    "lock": []
+    "blacklist": ["u7f03ceed05407e6a19d24593252aa627"],
+    "lock": ["u7f03ceed05407e6a19d24593252aa627"]
 }
