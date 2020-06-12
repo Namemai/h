@@ -40,6 +40,12 @@ k6 = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
 print('==== UNIT 6 READY ! ====')
 k7 = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
 print('==== UNIT 7 READY ! ====')
+k8 = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
+print('==== UNIT 8 READY ! ====')
+k9 = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
+print('==== UNIT 9 READY ! ====')
+k10 = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
+print('==== UNIT 10 READY ! ====')
 print ('\n\nALL UNIT READY !')
 
 mid = cl.getProfile().mid
