@@ -323,32 +323,26 @@ def lockqr(grup):
 def admin(grup, target):
     try:
         cl.findAndAddContactsByMid(target)
-        cl.kickoutFromGroup(grup, [target])
         cl.inviteIntoGroup(grup, [target])
     except:
         try:
             ki.findAndAddContactsByMid(target)
-            ki.kickoutFromGroup(grup, [target])
             ki.inviteIntoGroup(grup, [target])
         except:
             try:
                 kk.findAndAddContactsByMid(target)
-                kk.kickoutFromGroup(grup, [target])
                 kk.inviteIntoGroup(grup, [target])
             except:
                 try:
                     kc.findAndAddContactsByMid(target)
-                    kc.kickoutFromGroup(grup, [target])
                     kc.inviteIntoGroup(grup, [target])
                 except:
                     try:
                         km.findAndAddContactsByMid(target)
-                        km.kickoutFromGroup(grup, [target])
                         km.inviteIntoGroup(grup, [target])
                     except:
                         try:
                             k5.findAndAddContactsByMid(target)
-                            k5.kickoutFromGroup(grup, [target])
                             k5.inviteIntoGroup(grup, [target])
                         except:
                             pass
