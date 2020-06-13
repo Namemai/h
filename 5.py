@@ -214,7 +214,7 @@ def invite(grup, target):
 
 def backup(grup, target):
     try:
-        ki.inviteIntoGroup(grup, [target])
+        ki.inviteIntoGroup(grup, [Bmid,Cmid,Dmid,K5mid,mid])
         if target == Bmid:
             kk.acceptGroupInvitation(grup)
         if target == Cmid:
@@ -227,7 +227,7 @@ def backup(grup, target):
             cl.acceptGroupInvitation(grup)
     except:
         try:
-            kk.inviteIntoGroup(grup, [target])
+            kk.inviteIntoGroup(grup, [Amid,Cmid,Dmid,K5mid,mid])
             if target == Amid:
                 ki.acceptGroupInvitation(grup)
             if target == Cmid:
@@ -240,7 +240,7 @@ def backup(grup, target):
                 cl.acceptGroupInvitation(grup)
         except:
             try:
-                kc.inviteIntoGroup(grup, [target])
+                kc.inviteIntoGroup(grup, [Amid,Bmid,Dmid,K5mid,mid])
                 if target == Amid:
                     ki.acceptGroupInvitation(grup)
                 if target == Bmid:
@@ -253,7 +253,7 @@ def backup(grup, target):
                     cl.acceptGroupInvitation(grup)
             except:
                 try:
-                    km.inviteIntoGroup(grup, [target])
+                    km.inviteIntoGroup(grup, [Amid,Bmid,Cmid,K5mid,mid])
                     if target == Amid:
                         ki.acceptGroupInvitation(grup)
                     if target == Bmid:
@@ -1097,8 +1097,8 @@ async def cerberusRun():
 							else:
 								t7 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
-									t8 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t9 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t8 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t9 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param2 in status["blacklist"]:
@@ -1106,8 +1106,8 @@ async def cerberusRun():
 								pass
 							else:
 								try:
-									t10 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t11 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t10 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t11 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in status["blacklist"]:
@@ -1115,8 +1115,8 @@ async def cerberusRun():
 								pass
 							else:
 								try:
-									t12 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t13 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t12 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+									t13 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if mid in op.param3:
