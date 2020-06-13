@@ -320,32 +320,6 @@ def lockqr(grup):
                         k5.updateGroup(G)
                     except:
                         pass
-def admin(grup, target):
-    try:
-        cl.findAndAddContactsByMid(target)
-        cl.inviteIntoGroup(grup, [target])
-    except:
-        try:
-            ki.findAndAddContactsByMid(target)
-            ki.inviteIntoGroup(grup, [target])
-        except:
-            try:
-                kk.findAndAddContactsByMid(target)
-                kk.inviteIntoGroup(grup, [target])
-            except:
-                try:
-                    kc.findAndAddContactsByMid(target)
-                    kc.inviteIntoGroup(grup, [target])
-                except:
-                    try:
-                        km.findAndAddContactsByMid(target)
-                        km.inviteIntoGroup(grup, [target])
-                    except:
-                        try:
-                            k5.findAndAddContactsByMid(target)
-                            k5.inviteIntoGroup(grup, [target])
-                        except:
-                            pass
 
 def blacklist(target):
 	try:
@@ -1287,16 +1261,6 @@ async def cerberusRun():
 									t42 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
-						if op.param3 in admin = status["admin"]:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								t43 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									t44 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t45 = threading.Thread(target=admin, args=(op.param1, op.param3)).start()
-								except:
-									pass
 					if op.type == 32:
 						if op.param1 in status["lock"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
@@ -1365,16 +1329,6 @@ async def cerberusRun():
 								try:
 									t60 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t61 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-								except:
-									pass
-						if op.param3 in admin = status["admin"]:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								t62 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									t63 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t64 = threading.Thread(target=admin, args=(op.param1, op.param3)).start()
 								except:
 									pass
 					if op.type == 26:
