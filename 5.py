@@ -442,6 +442,36 @@ def RECEIVE_MESSAGE(op):
 				sentinel = command(text)
 				uwew = " ".join(sentinel.split())
 			for uwew in sentinel.split(' & '):
+				if uwew == "กลุ่ม":
+					if sender in creator or sender in owner or sender in admin or sender in staff:
+						groups = cl.groups
+						ret_ = "╭──[ Group List ]"
+						no = 0 
+						for gid in groups:
+							group = cl.getGroup(gid)
+							ret_ += "\n│ {}. {} | {}".format(str(no), str(group.name), str(len(group.members)))
+							no += 1
+						ret_ += "\n╰──[ Total {} Groups ]".format(str(len(groups)))
+						k = len(ret_)//10000
+						for aa in range(k+1):
+							cl.sendReplyMessage(reply,receiver,'{}'.format(ret_[aa*10000 : (aa+1)*10000]))
+				if uwew == "ivme":
+					if sender in creator or sender in owner or sender in admin or sender in staff:
+						text = msg.text.split()
+						number = text[1]
+						if number.isdigit():
+							groups = cl.getGroupIdsJoined()
+							if int(number) < len(groups) and int(number) >= 0:
+								groupid = groups[int(number)]
+								group = cl.getGroup(groupid)
+								target = sender
+								try:
+									cl.getGroup(groupid)
+									cl.findAndAddContactsByMid(target)
+									cl.inviteIntoGroup(groupid, [target])
+									cl.sendReplyMessage(reply,receiver.to,"Succes invite to " + str(group.name))
+								except:
+									cl.sendReplyMessage(reply,receiver.to,"I no there baby")  
 				if uwew == "help":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						cl.sendReplyMessage(reply,receiver,commands())
