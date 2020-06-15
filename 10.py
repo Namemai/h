@@ -202,37 +202,37 @@ def kick(grup, target):
 
 def cancel(grup, target):
     try:
-        k1.cancelGroupInvitation(grup, [target])
+        k1.cancelGroupInvitation(grup, [op.param3])
     except:
         try:
-            k2.cancelGroupInvitation(grup, [target])
+            k2.cancelGroupInvitation(grup, [op.param3])
         except:
             try:
-                k3.cancelGroupInvitation(grup, [target])
+                k3.cancelGroupInvitation(grup, [op.param3])
             except:
                 try:
-                    k4.cancelGroupInvitation(grup, [target])
+                    k4.cancelGroupInvitation(grup, [op.param3])
                 except:
                     try:
-                        k5.cancelGroupInvitation(grup, [target])
+                        k5.cancelGroupInvitation(grup, [op.param3])
                     except:
                         try:
-                            k6.cancelGroupInvitation(grup, [target])
+                            k6.cancelGroupInvitation(grup, [op.param3])
                         except:
                             try:
-                                k7.cancelGroupInvitation(grup, [target])
+                                k7.cancelGroupInvitation(grup, [op.param3])
                             except:
                                 try:
-                                    k8.cancelGroupInvitation(grup, [target])
+                                    k8.cancelGroupInvitation(grup, [op.param3])
                                 except:
                                     try:
-                                        k9.cancelGroupInvitation(grup, [target])
+                                        k9.cancelGroupInvitation(grup, [op.param3])
                                     except:
                                         try:
-                                            k10.cancelGroupInvitation(grup, [target])
+                                            k10.cancelGroupInvitation(grup, [op.param3])
                                         except:
                                             try:
-                                                cl.cancelGroupInvitation(grup, [target])
+                                                cl.cancelGroupInvitation(grup, [op.param3])
                                             except:
                                                 pass
 
@@ -543,52 +543,52 @@ def backup(grup, target):
 def lockqr(grup):
     try:
         G = k1.getGroup(grup)
-        G.preventedJoinByTicket = True
+        G.preventedJoinByTicketV2 = True
         k1.updateGroup(G)
     except:
         try:
             G = k2.getGroup(grup)
-            G.preventedJoinByTicket = True
+            G.preventedJoinByTicketV2 = True
             k2.updateGroup(G)
         except:
             try:
                 G = k3.getGroup(grup)
-                G.preventedJoinByTicket = True
+                G.preventedJoinByTicketV2 = True
                 k3.updateGroup(G)
             except:
                 try:
                     G = k4.getGroup(grup)
-                    G.preventedJoinByTicket = True
+                    G.preventedJoinByTicketV2 = True
                     k4.updateGroup(G)
                 except:
                     try:
                         G = k5.getGroup(grup)
-                        G.preventedJoinByTicket = True
+                        G.preventedJoinByTicketV2 = True
                         k5.updateGroup(G)
                     except:
                         try:
                             G = k6.getGroup(grup)
-                            G.preventedJoinByTicket = True
+                            G.preventedJoinByTicketV2 = True
                             k6.updateGroup(G)
                         except:
                             try:
                                 G = k7.getGroup(grup)
-                                G.preventedJoinByTicket = True
+                                G.preventedJoinByTicketV2 = True
                                 k7.updateGroup(G)
                             except:
                                 try:
                                     G = k8.getGroup(grup)
-                                    G.preventedJoinByTicket = True
+                                    G.preventedJoinByTicketV2 = True
                                     k8.updateGroup(G)
                                 except:
                                     try:
                                         G = k9.getGroup(grup)
-                                        G.preventedJoinByTicket = True
+                                        G.preventedJoinByTicketV2 = True
                                         k9.updateGroup(G)
                                     except:
                                         try:
                                             G = k10.getGroup(grup)
-                                            G.preventedJoinByTicket = True
+                                            G.preventedJoinByTicketV2 = True
                                             k10.updateGroup(G)
                                         except:
                                             pass
@@ -823,13 +823,13 @@ def RECEIVE_MESSAGE(op):
 						except TalkException as talk_error:
 							if talk_error.code == 35:
 								G = cl.getGroup(receiver)
-								G.preventedJoinByTicket = False
+								G.preventedJoinByTicketV2 = False
 								cl.updateGroup(G)
-								links = cl.reissueGroupTicket(receiver)
+								links = cl.reissueGroupTicketV2(receiver)
 								for bot in KAC:
 									bot.acceptGroupInvitationByTicketV2(receiver,links)
 								G = cl.getGroup(receiver)
-								G.preventedJoinByTicket = True
+								G.preventedJoinByTicketV2 = True
 								cl.updateGroup(G)
 				elif uwew == "blacklist" or uwew == "bc":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
