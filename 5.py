@@ -296,27 +296,27 @@ def backup(grup, target):
 def lockqr(grup):
     try:
         G = ki.getGroup(grup)
-        G.preventedJoinByTicket = True
+        G.preventedJoinByTicketV2 = True
         ki.updateGroup(G)
     except:
         try:
             G = kk.getGroup(grup)
-            G.preventedJoinByTicket = True
+            G.preventedJoinByTicketV2 = True
             kk.updateGroup(G)
         except:
             try:
                 G = kc.getGroup(grup)
-                G.preventedJoinByTicket = True
+                G.preventedJoinByTicketV2 = True
                 kc.updateGroup(G)
             except:
                 try:
                     G = km.getGroup(grup)
-                    G.preventedJoinByTicket = True
+                    G.preventedJoinByTicketV2 = True
                     km.updateGroup(G)
                 except:
                     try:
                         G = k5.getGroup(grup)
-                        G.preventedJoinByTicket = True
+                        G.preventedJoinByTicketV2 = True
                         k5.updateGroup(G)
                     except:
                         pass
