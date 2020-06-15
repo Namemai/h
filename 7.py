@@ -181,28 +181,28 @@ def kick(grup, target):
 
 def cancel(grup, target):
     try:
-        ki.cancelGroupInvitation(grup, [target])
+        ki.cancelGroupInvitation(grup, [op.param3])
     except:
         try:
-            kk.cancelGroupInvitation(grup, [target])
+            kk.cancelGroupInvitation(grup, [op.param3])
         except:
             try:
-                kc.cancelGroupInvitation(grup, [target])
+                kc.cancelGroupInvitation(grup, [op.param3])
             except:
                 try:
-                    km.cancelGroupInvitation(grup, [target])
+                    km.cancelGroupInvitation(grup, [op.param3])
                 except:
                     try:
-                        k5.cancelGroupInvitation(grup, [target])
+                        k5.cancelGroupInvitation(grup, [op.param3])
                     except:
                         try:
-                            k6.cancelGroupInvitation(grup, [target])
+                            k6.cancelGroupInvitation(grup, [op.param3])
                         except:
                             try:
-                                k7.cancelGroupInvitation(grup, [target])
+                                k7.cancelGroupInvitation(grup, [op.param3])
                             except:
                                 try:
-                                    cl.cancelGroupInvitation(grup, [target])
+                                    cl.cancelGroupInvitation(grup, [op.param3])
                                 except:
                                     pass
 
@@ -383,37 +383,37 @@ def backup(grup, target):
 def lockqr(grup):
     try:
         G = ki.getGroup(grup)
-        G.preventedJoinByTicket = True
+        G.preventedJoinByTicketV2 = True
         ki.updateGroup(G)
     except:
         try:
             G = kk.getGroup(grup)
-            G.preventedJoinByTicket = True
+            G.preventedJoinByTicketV2 = True
             kk.updateGroup(G)
         except:
             try:
                 G = kc.getGroup(grup)
-                G.preventedJoinByTicket = True
+                G.preventedJoinByTicketV2 = True
                 kc.updateGroup(G)
             except:
                 try:
                     G = km.getGroup(grup)
-                    G.preventedJoinByTicket = True
+                    G.preventedJoinByTicketV2 = True
                     km.updateGroup(G)
                 except:
                     try:
                         G = k5.getGroup(grup)
-                        G.preventedJoinByTicket = True
+                        G.preventedJoinByTicketV2 = True
                         k5.updateGroup(G)
                     except:
                         try:
                             G = k6.getGroup(grup)
-                            G.preventedJoinByTicket = True
+                            G.preventedJoinByTicketV2 = True
                             k6.updateGroup(G)
                         except:
                             try:
                                 G = k7.getGroup(grup)
-                                G.preventedJoinByTicket = True
+                                G.preventedJoinByTicketV2 = True
                                 k7.updateGroup(G)
                             except:
                                 pass
@@ -609,13 +609,13 @@ def RECEIVE_MESSAGE(op):
 						except TalkException as talk_error:
 							if talk_error.code == 35:
 								G = cl.getGroup(receiver)
-								G.preventedJoinByTicket = False
+								G.preventedJoinByTicketV2 = False
 								cl.updateGroup(G)
-								links = cl.reissueGroupTicket(receiver)
+								links = cl.reissueGroupTicketV2(receiver)
 								for bot in KAC:
-									bot.acceptGroupInvitationByTicket(receiver,links)
+									bot.acceptGroupInvitationByTicketV2(receiver,links)
 								G = cl.getGroup(receiver)
-								G.preventedJoinByTicket = True
+								G.preventedJoinByTicketV2 = True
 								cl.updateGroup(G)
 				elif uwew == "blacklist" or uwew == "bc":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
