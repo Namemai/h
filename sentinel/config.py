@@ -29,15 +29,15 @@ class Config(object):
     }
 
     APP_VERSION = {
-        'ANDROID': '9.16.1',
-        'IOS': '9.16.1',
+        'ANDROID': '8.14.2',
+        'IOS': '8.14.2',
         'ANDROIDLITE': '2.1.0',
         'BIZANDROID': '1.7.2',
         'BIZIOS': '1.7.5',
         'BIZWEB': '1.0.22',
         'DESKTOPWIN': '5.9.0',
         'DESKTOPMAC': '5.9.0',
-        'IOSIPAD': '9.16.1',
+        'IOSIPAD': '8.14.2',
         'CHROMEOS': '2.1.5',
         'WIN10': '5.5.5',
         'DEFAULT': '8.11.0',
