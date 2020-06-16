@@ -34,16 +34,13 @@ kc = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
 print('==== UNIT 3 READY ! ====')
 km = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
 print('==== UNIT 4 READY ! ====')
-k5 = LINE("primary",appName='IOS\t10.1.1\tIOS OS\t1')
-print('==== UNIT 5 READY ! ====')
 print ('\n\nALL UNIT READY !')
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Dmid = km.getProfile().mid
-K5mid = k5.getProfile().mid
-KAC = [ki,kk,kc,km,k5]
+KAC = [cl,ki,kk,kc,km]
 
 loop = asyncio.get_event_loop()
 status = livejson.File('status.json', True, False, 4)
@@ -54,14 +51,13 @@ owner = status["owner"]
 admin = status["admin"]
 staff = status["staff"]
 mybots = status["mybots"]
-Bots = [mid,Amid,Bmid,Cmid,Dmid,K5mid]
-Botslist = [cl,ki,kk,kc,km,k5]
+Bots = [mid,Amid,Bmid,Cmid,Dmid]
+Botslist = [cl,ki,kk,kc,km]
 resp0 = cl.getProfile().displayName
 resp1 = ki.getProfile().displayName
 resp2 = kk.getProfile().displayName
 resp3 = kc.getProfile().displayName
 resp4 = km.getProfile().displayName
-resp5 = k5.getProfile().displayName
 
 def backupData():
 	try:
@@ -157,12 +153,9 @@ def kick(grup, target):
                     km.kickoutFromGroup(grup, [target])
                 except:
                     try:
-                        k5.kickoutFromGroup(grup, [target])
+                        cl.kickoutFromGroup(grup, [target])
                     except:
-                        try:
-                            cl.kickoutFromGroup(grup, [target])
-                        except:
-                            pass
+                        pass
 
 def cancel(grup, target):
     try:
@@ -178,12 +171,9 @@ def cancel(grup, target):
                     km.cancelGroupInvitation(grup, [op.param3])
                 except:
                     try:
-                        k5.cancelGroupInvitation(grup, [op.param3])
+                        cl.cancelGroupInvitation(grup, [op.param3])
                     except:
-                        try:
-                            cl.cancelGroupInvitation(grup, [op.param3])
-                        except:
-                            pass
+                        pass
 
 def invite(grup, target):
     try:
@@ -203,70 +193,58 @@ def invite(grup, target):
                     km.inviteIntoGroup(grup, [target])
                 except:
                     try:
-                        k5.findAndAddContactsByMid(target)
-                        k5.inviteIntoGroup(grup, [target])
+                        cl.findAndAddContactsByMid(target)
+                        cl.inviteIntoGroup(grup, [target])
                     except:
-                        try:
-                            cl.findAndAddContactsByMid(target)
-                            cl.inviteIntoGroup(grup, [target])
-                        except:
-                            pass
+                        pass
 
 def backup(grup, target):
     try:
-        ki.inviteIntoGroup(grup, [Bmid,Cmid,Dmid,K5mid,mid])
+        ki.inviteIntoGroup(grup, [Bmid,Cmid,Dmid,mid])
         if target == Bmid:
             kk.acceptGroupInvitation(grup)
         if target == Cmid:
             kc.acceptGroupInvitation(grup)
         if target == Dmid:
             km.acceptGroupInvitation(grup)
-        if target == K5mid:
-            k5.acceptGroupInvitation(grup)
         if target == mid:
             cl.acceptGroupInvitation(grup)
     except:
         try:
-            kk.inviteIntoGroup(grup, [Amid,Cmid,Dmid,K5mid,mid])
+            kk.inviteIntoGroup(grup, [Amid,Cmid,Dmid,mid])
             if target == Amid:
                 ki.acceptGroupInvitation(grup)
             if target == Cmid:
                 kc.acceptGroupInvitation(grup)
             if target == Dmid:
                 km.acceptGroupInvitation(grup)
-            if target == K5mid:
-                k5.acceptGroupInvitation(grup)
             if target == mid:
                 cl.acceptGroupInvitation(grup)
         except:
             try:
-                kc.inviteIntoGroup(grup, [Amid,Bmid,Dmid,K5mid,mid])
+                kc.inviteIntoGroup(grup, [Amid,Bmid,Dmid,mid])
                 if target == Amid:
                     ki.acceptGroupInvitation(grup)
                 if target == Bmid:
                     kk.acceptGroupInvitation(grup)
                 if target == Dmid:
                     km.acceptGroupInvitation(grup)
-                if target == K5mid:
-                    k5.acceptGroupInvitation(grup)
                 if target == mid:
                     cl.acceptGroupInvitation(grup)
             except:
                 try:
-                    km.inviteIntoGroup(grup, [Amid,Bmid,Cmid,K5mid,mid])
+                    km.inviteIntoGroup(grup, [Amid,Bmid,Cmid,mid])
                     if target == Amid:
                         ki.acceptGroupInvitation(grup)
                     if target == Bmid:
                         kk.acceptGroupInvitation(grup)
                     if target == Cmid:
                         kc.acceptGroupInvitation(grup)
-                    if target == K5mid:
-                        k5.acceptGroupInvitation(grup)
                     if target == mid:
                         cl.acceptGroupInvitation(grup)
                 except:
                     try:
-                        k5.inviteIntoGroup(grup, [Amid,Bmid,Cmid,Dmid,mid])
+                        cl.inviteIntoGroup(grup, [Amid,Bmid,Cmid,Dmid])
                         if target == Amid:
                             ki.acceptGroupInvitation(grup)
                         if target == Bmid:
@@ -275,23 +253,8 @@ def backup(grup, target):
                             kc.acceptGroupInvitation(grup)
                         if target == Dmid:
                             km.acceptGroupInvitation(grup)
-                        if target == mid:
-                            cl.acceptGroupInvitation(grup)
                     except:
-                        try:
-                            cl.inviteIntoGroup(grup, [Amid,Bmid,Cmid,Dmid,K5mid])
-                            if target == Amid:
-                                ki.acceptGroupInvitation(grup)
-                            if target == Bmid:
-                                kk.acceptGroupInvitation(grup)
-                            if target == Cmid:
-                                kc.acceptGroupInvitation(grup)
-                            if target == Dmid:
-                                km.acceptGroupInvitation(grup)
-                            if target == K5mid:
-                                k5.acceptGroupInvitation(grup)
-                        except:
-                            pass
+                        pass
 
 def lockqr(grup):
     try:
@@ -315,9 +278,9 @@ def lockqr(grup):
                     km.updateGroup(G)
                 except:
                     try:
-                        G = k5.getGroup(grup)
+                        G = cl.getGroup(grup)
                         G.preventedJoinByTicketV2 = True
-                        k5.updateGroup(G)
+                        cl.updateGroup(G)
                     except:
                         pass
 
@@ -348,11 +311,6 @@ def logspeed():
 	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
 	get_profile_time_start = time.time()
 	get_profile = km.getProfile()
-	get_profile_time = time.time() - get_profile_time_start
-	get_profile_took = time.time() - get_profile_time_start
-	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
-	get_profile_time_start = time.time()
-	get_profile = k5.getProfile()
 	get_profile_time = time.time() - get_profile_time_start
 	get_profile_took = time.time() - get_profile_time_start
 	return "「 Bots Speed 」\n • Took : %.3fms\n • Taken: %.5f" % (get_profile_took,get_profile_time)
@@ -430,11 +388,6 @@ def RECEIVE_MESSAGE(op):
 					del settings["sentinelPict"][Dmid]
 					km.updateProfilePicture(path4)
 					km.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
-				if K5mid in settings["sentinelPict"]:
-					path5 = k5.downloadObjectMsg(msg.id)
-					del settings["sentinelPict"][K5mid]
-					k5.updateProfilePicture(path5)
-					k5.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nSuccess Change Profile Picture")
 		if msg.contentType == 0:
 			if text is None:
 				return
@@ -492,14 +445,12 @@ def RECEIVE_MESSAGE(op):
 						kk.sendReplyMessage(reply,receiver,"「 {} 」".format(resp2))
 						kc.sendReplyMessage(reply,receiver,"「 {} 」".format(resp3))
 						km.sendReplyMessage(reply,receiver,"「 {} 」".format(resp4))
-						k5.sendReplyMessage(reply,receiver,"「 {} 」".format(resp5))
 				elif uwew == "sp":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						ki.sendReplyMessage(reply,receiver,logspeed())
 						kk.sendReplyMessage(reply,receiver,logspeed())
 						kc.sendReplyMessage(reply,receiver,logspeed())
 						km.sendReplyMessage(reply,receiver,logspeed())
-						k5.sendReplyMessage(reply,receiver,logspeed())
 				elif uwew == "bye":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						for bot in Botslist:
@@ -507,12 +458,11 @@ def RECEIVE_MESSAGE(op):
 				elif uwew == "ivb":
 					if sender in creator or sender in owner or sender in admin or sender in staff:
 						try:
-							cl.inviteIntoGroup(receiver, [Amid,Bmid,Cmid,Dmid,K5mid])
+							cl.inviteIntoGroup(receiver, [Amid,Bmid,Cmid,Dmid])
 							ki.acceptGroupInvitation(receiver)
 							kk.acceptGroupInvitation(receiver)
 							kc.acceptGroupInvitation(receiver)
 							km.acceptGroupInvitation(receiver)
-							k5.acceptGroupInvitation(receiver)
 						except TalkException as talk_error:
 							if talk_error.code == 35:
 								G = cl.getGroup(receiver)
@@ -821,15 +771,6 @@ def RECEIVE_MESSAGE(op):
 						if has1 == "OK":sil1 = "OK.✔"
 						else:sil1 = "Down!"
 						km.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
-						try:k5.inviteIntoGroup(to, [K5mid]);has = "OK"
-						except:has = "NOT"
-						try:k5.kickoutFromGroup(to, [K5mid]);has1 = "OK"
-						except:has1 = "NOT"
-						if has == "OK":sil = "OK.✔"
-						else:sil = "Down!"
-						if has1 == "OK":sil1 = "OK.✔"
-						else:sil1 = "Down!"
-						k5.sendReplyMessage(reply, receiver, "「 Bots Status 」\n • Invite : {}\n • Kick : {}".format(sil1,sil))
 				elif uwew.startswith("ชื่อ0 "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
@@ -885,17 +826,6 @@ def RECEIVE_MESSAGE(op):
 							km.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						km.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
-				elif uwew.startswith("ชื่อ5 "):
-					if sender in creator or sender in owner:
-						sep = text.split(" ")
-						name = text.replace(sep[0] + " ","")
-						if len(name) <= 99999999:
-							dname5 = k5.getProfile()
-							dname5.displayName = name
-							k5.updateProfile(dname5)
-							k5.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
-					else:
-						k5.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ชื่อทั้งหมด "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
@@ -921,10 +851,6 @@ def RECEIVE_MESSAGE(op):
 							dname4.displayName = name
 							km.updateProfile(dname4)
 							km.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
-							dname5 = k5.getProfile()
-							dname5.displayName = name
-							k5.updateProfile(dname5)
-							k5.sendReplyMessage(reply,receiver,"「 Display Name 」\nDisplay Name Changed To {}".format(str(name)))
 					else:
 						for a in Botslist:
 							a.sendReplyMessage(reply,receiver,"「 Display Name 」\nAccess Limited For Owner Only -_-")
@@ -983,17 +909,6 @@ def RECEIVE_MESSAGE(op):
 							km.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						km.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
-				elif uwew.startswith("ตัส5 "):
-					if sender in creator or sender in owner:
-						sep = text.split(" ")
-						name = text.replace(sep[0] + " ","")
-						if len(name) <= 99999999:
-							bio5 = k5.getProfile()
-							bio5.statusMessage = name
-							k5.updateProfile(bio5)
-							k5.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
-					else:
-						k5.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
 				elif uwew.startswith("ตัสทั้งหมด "):
 					if sender in creator or sender in owner:
 						sep = text.split(" ")
@@ -1019,10 +934,6 @@ def RECEIVE_MESSAGE(op):
 							bio4.statusMessage = name
 							km.updateProfile(bio4)
 							km.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
-							bio5 = k5.getProfile()
-							bio5.statusMessage = name
-							k5.updateProfile(bio5)
-							k5.sendReplyMessage(reply,receiver,"「 Status Message 」\nStatus Message Changed To {}".format(str(name)))
 					else:
 						for a in Botslist:
 							a.sendReplyMessage(reply,receiver,"「 Status Message 」\nAccess Limited For Owner Only -_-")
@@ -1044,16 +955,12 @@ def RECEIVE_MESSAGE(op):
 						if spl == "4":
 							settings["sentinelPict"][Dmid] = True
 							km.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
-						if spl == "5":
-							settings["sentinelPict"][K5mid] = True
-							k5.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 						if spl == "รูป":
 							settings["sentinelPict"][mid] = True
 							settings["sentinelPict"][Amid] = True
 							settings["sentinelPict"][Bmid] = True
 							settings["sentinelPict"][Cmid] = True
 							settings["sentinelPict"][Dmid] = True
-							settings["sentinelPict"][K5mid] = True
 							for a in Botslist:
 								a.sendReplyMessage(reply,receiver,"「 Profile Picture 」\nPlease Send Picture You Want To Use")
 					else:
@@ -1189,14 +1096,6 @@ async def cerberusRun():
 									km.acceptGroupInvitation(op.param1)
 									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
 									km.leaveGroup(op.param1)
-						if K5mid in op.param3:
-							if settings["autoJoin"] == True:
-								if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-									k5.acceptGroupInvitation(op.param1)
-								else:
-									k5.acceptGroupInvitation(op.param1)
-									sendMention(op.param1,"Sorry @!,\nI Will Leave Because You Doesn't Have Access -_-",[op.param2])
-									k5.leaveGroup(op.param1)
 					if op.type == 17:
 						if op.param1 in status["lock"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
@@ -1280,28 +1179,27 @@ async def cerberusRun():
 									t38 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
-						if op.param3 in K5mid:
+					if op.type == 32:
+						if op.param1 in status["lock"]:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
 								t39 = threading.Thread(target=blacklist, args=(op.param2,)).start()
 								try:
 									t40 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t41 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-									t42 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-								except:
-									pass
-					if op.type == 32:
-						if op.param1 in status["lock"]:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								t43 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									t44 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 								except:
 									pass
 						if op.param3 in mid:
+							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+								pass
+							else:
+								t41 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+								try:
+									t42 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+									t43 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+								except:
+									pass
+						if op.param3 in Amid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
@@ -1311,7 +1209,7 @@ async def cerberusRun():
 									t46 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
-						if op.param3 in Amid:
+						if op.param3 in Bmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
@@ -1321,7 +1219,7 @@ async def cerberusRun():
 									t49 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
-						if op.param3 in Bmid:
+						if op.param3 in Cmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
@@ -1331,7 +1229,7 @@ async def cerberusRun():
 									t52 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
-						if op.param3 in Cmid:
+						if op.param3 in Dmid:
 							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
 								pass
 							else:
@@ -1339,26 +1237,6 @@ async def cerberusRun():
 								try:
 									t54 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
 									t55 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-								except:
-									pass
-						if op.param3 in Dmid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								t56 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									t57 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t58 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-								except:
-									pass
-						if op.param3 in K5mid:
-							if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-								pass
-							else:
-								t59 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-								try:
-									t60 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-									t61 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
 								except:
 									pass
 					if op.type == 26:
@@ -1369,25 +1247,25 @@ async def cerberusRun():
 				pass
 			elif "log_out" in error.lower():
 				backupData()
-				time.sleep(6)
+				time.sleep(5)
 				python = sys.executable
 				os.execl(python, python, *sys.argv)
 			elif "ShouldSyncException" in error:
 				backupData()
 				logError(error)
-				time.sleep(6)
+				time.sleep(5)
 				python3 = sys.executable
 				os.execl(python3, python3, *sys.argv)
 			elif "TalkException(code=8, reason='LOG_OUT', parameterMap=None)" in error:
 				backupData()
 				logError(error)
-				time.sleep(6)
+				time.sleep(5)
 				python = sys.executable
 				os.execl(python, python, *sys.argv)
 			elif "TalkException(code=20, reason='[UNCAUGHT_INTERNAL_ERROR] [UNCAUGHT_INTERNAL_ERROR] Login from secondary user blocked by userHash + clientType 8cb91561b450b38ccf0119fc4f5e37a3MA', parameterMap=None)" in error:
 				backupData()
 				logError(error)
-				time.sleep(6)
+				time.sleep(5)
 				python = sys.executable
 				os.execl(python, python, *sys.argv)
 			else:
